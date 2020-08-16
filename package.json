@@ -1,23 +1,27 @@
 {
-  "name": "@ads-vdh/btv-house",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/KyleMit/btv-house.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/KyleMit/btv-house/issues"
-  },
-  "homepage": "https://github.com/KyleMit/btv-house#readme",
-  "dependencies": {
-    "@11ty/eleventy": "^0.11.0"
-  }
+    "name": "@ads-vdh/btv-house",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "eleventy",
+        "serve": "eleventy --serve",
+        "maps": "node cli/maps.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/KyleMit/btv-house.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/KyleMit/btv-house/issues"
+    },
+    "homepage": "https://github.com/KyleMit/btv-house#readme",
+    "dependencies": {
+        "@11ty/eleventy": "^0.11.0",
+        "@googlemaps/google-maps-services-js": "^3.1.6",
+        "dotenv": "^8.2.0"
+    }
 }

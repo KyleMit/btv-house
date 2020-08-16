@@ -1,8 +1,9 @@
 ---
 layout: default.njk
 ---
+
 <ul class="houses">
-    {% for house in houses %}
+    {% for house in collections.homes %}
         <li class="house card">
             <div class="card-title">
                 <h2>
@@ -42,6 +43,19 @@ layout: default.njk
                     </ul>
                 </div>
                 <img src="/assets/images/{{house.thumbnail}}" alt="{{house.title}}">
+            </div>
+            <div class="card-footer">
+                <ul class="family">
+                    {% for fam in house.family %}
+                    <li class="fam">
+                        <img src="/assets/profiles/{{fam.name}}.jpg" alt="{{fam.name}}">
+                        <div class="distance">
+                            <span class="num">{{fam.distance.text.split(" ")[0]}}</span>
+                            <span class="units">{{fam.distance.text.split(" ")[1]}}</span>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
             </div>
         </li>
     {% endfor %}

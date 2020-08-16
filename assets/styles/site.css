@@ -127,6 +127,42 @@ span.price {
 }
 
 
+/* card footer */
+
+.card-footer {
+    margin-top: 10px;
+}
+
+ul.family {
+    display: flex;
+    justify-content: space-around;
+}
+
+.family img {
+    width: 47px;
+    border-radius: 50%;
+}
+
+li.fam {
+    display: flex;
+    align-items: center;
+}
+
+.distance {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+span.num {
+    font-weight: bold;
+}
+
+span.units {
+    color: grey;
+}
+
+
 /* footer */
 
 footer {
