@@ -63,5 +63,16 @@
         "thumbnail": "south-burlington.jpg",
         "cats": true,
         "dogs": true
+    },
+    {
+        "title": "Wonderful New House for rent",
+        "link": "https://vermont.craigslist.org/apa/d/south-burlington-wonderful-new-house/7175754813.html",
+        "price": "$750",
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "address": "2 Kennedy Dr, South Burlington, VT 05403",
+        "thumbnail": "south-burlington.jpg",
+        "cats": true,
+        "dogs": true
     }
 ]
