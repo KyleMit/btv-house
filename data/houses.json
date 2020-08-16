@@ -4,7 +4,7 @@
         "price": "$800",
         "bedrooms": 2,
         "bathrooms": 2,
-        "address": "25 West Rd Burlington, VT",
+        "address": "25 West Rd Burlington, VT 05408",
         "thumbnail": "25-west.jpg",
         "cats": true,
         "dogs": true
@@ -15,7 +15,7 @@
         "price": "$850",
         "bedrooms": 3,
         "bathrooms": 2,
-        "address": "43 Maple St, Essex, VT",
+        "address": "43 Maple St, Essex, VT 05452",
         "thumbnail": "43-maple.jpg",
         "cats": true,
         "dogs": true
@@ -26,7 +26,7 @@
         "price": "$980",
         "bedrooms": 2,
         "bathrooms": 1,
-        "address": "1269-1251 North Ave, Burlington, VT",
+        "address": "1269-1251 North Ave, Burlington, VT 05408",
         "thumbnail": "north-ave.jpg",
         "cats": true,
         "dogs": true
@@ -65,13 +65,68 @@
         "dogs": true
     },
     {
-        "title": "Wonderful New House for rent",
-        "link": "https://vermont.craigslist.org/apa/d/south-burlington-wonderful-new-house/7175754813.html",
-        "price": "$750",
-        "bedrooms": 2,
+        "title": "Affordable 3 bed, 2 bath apartment ready for rental",
+        "link": "https://vermont.craigslist.org/apa/d/williston-affordable-3-bed-two-bath/7159020836.html",
+        "price": "$950",
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "address": "4697-4501 Williston Rd, Williston, VT 05495",
+        "thumbnail": "williston.jpg",
+        "cats": true,
+        "dogs": true
+    },
+    {
+        "title": "Perfect Family Home Own Home & Move in Ready",
+        "link": "https://vermont.craigslist.org/apa/d/colchester-perfect-family-home-own-home/7174416522.html",
+        "price": "$1,000",
+        "bedrooms": 3,
         "bathrooms": 1,
-        "address": "2 Kennedy Dr, South Burlington, VT 05403",
-        "thumbnail": "south-burlington.jpg",
+        "address": "1000-1026 VT-127 Colchester, VT 05446",
+        "thumbnail": "colchester.jpg",
+        "cats": true,
+        "dogs": true
+    },
+    {
+        "title": "3630 Mountain Rd",
+        "link": "https://vermont.craigslist.org/apa/d/stowe-3630-mountain-rd/7169700613.html",
+        "price": "$1,000",
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "address": "3630 Mountain Rd, Stowe, VT 05672",
+        "thumbnail": "3630-Mountain.jpg",
+        "cats": true,
+        "dogs": true
+    },
+    {
+        "title": "42 Winding Brook Dr",
+        "link": "https://vermont.craigslist.org/apa/d/south-burlington-42-winding-brook-dr-42/7171078354.html",
+        "price": "$900",
+        "bedrooms": 2,
+        "bathrooms": 1.5,
+        "address": "42 Winding Brook Dr, South Burlington, VT 05403",
+        "thumbnail": "42-winding-brook.jpg",
+        "cats": true,
+        "dogs": true
+    },
+    {
+        "title": "Recently Renovated 1 Bedroom - Heated",
+        "link": "https://vermont.craigslist.org/apa/d/plainfield-recently-renovated-1-bedroom/7176089737.html",
+        "price": "$950",
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "address": "8176 US Rte 2, East Montpelier, VT",
+        "thumbnail": "8176-US-2.jpg",
+        "cats": true,
+        "dogs": true
+    },
+    {
+        "title": "160 South Main St. #2",
+        "link": "https://vermont.craigslist.org/apa/d/south-barre-160-south-main-st-2/7169330664.html",
+        "price": "$950",
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "address": "160 South Main Street, Unit 2",
+        "thumbnail": "16-south-main.jpg",
         "cats": true,
         "dogs": true
     }
