@@ -1,1 +1,23 @@
-[]
+[{
+        "title": "Single Family Home",
+        "link": "https://vermont.craigslist.org/apa/d/burlington-single-family-home/7177316461.html",
+        "price": "$800",
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "address": "25 West Rd Burlington, VT",
+        "thumbnail": "west-rd.jpg",
+        "cats": true,
+        "dogs": true
+    },
+    {
+        "title": "43 Maple St, Essex",
+        "link": "https://vermont.craigslist.org/apa/d/essex-junction-43-maple-st-essex/7177287660.html",
+        "price": "$850",
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "address": "43 Maple St, Essex, VT",
+        "thumbnail": "43-maple.jpg",
+        "cats": true,
+        "dogs": true
+    }
+]

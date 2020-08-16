@@ -4,8 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vermont House Hunting</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <style>
+
+    </style>
 </head>
 <body>
-    <h1>House Hunting in Vermont</h1>
+
+    <header>
+        <h1>House Hunting in Vermont (for Parker)</h1>
+    </header>
+    <main>
+        <ul class="houses">
+                {% for house in houses %}
+                    <li class="house card">
+                        <div class="card-title">
+                            <h2>{{house.title}}</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-data">
+                                <div>
+                                    {{house.price}}
+                                </div>
+                                <div>
+                                    {{house.bedrooms}}
+                                </div>
+                                <div>
+                                    {{house.bathrooms}}
+                                </div>
+
+                            </div>
+                            <img src="/assets/images/{{house.thumbnail}}" alt="{{house.title}}">
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
