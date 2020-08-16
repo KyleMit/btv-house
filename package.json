@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "build": "eleventy",
+        "build": "node cli/maps.js && eleventy",
         "serve": "eleventy --serve",
         "maps": "node cli/maps.js"
     },

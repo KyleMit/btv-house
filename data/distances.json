@@ -418,39 +418,39 @@
     ]
   },
   {
-    "address": "160 South Main Street, Unit 2",
+    "address": "160 S Main St, Barre, VT 05641",
     "family": [
       {
         "name": "Dad",
         "distance": {
-          "text": "368 mi",
-          "value": 591669
+          "text": "52.1 mi",
+          "value": 83849
         },
         "duration": {
-          "text": "6 hours 17 mins",
-          "value": 22618
+          "text": "52 mins",
+          "value": 3144
         }
       },
       {
         "name": "Kyle",
         "distance": {
-          "text": "376 mi",
-          "value": 605443
+          "text": "60.7 mi",
+          "value": 97623
         },
         "duration": {
-          "text": "6 hours 26 mins",
-          "value": 23175
+          "text": "1 hour 2 mins",
+          "value": 3701
         }
       },
       {
         "name": "Ryan",
         "distance": {
-          "text": "367 mi",
-          "value": 590248
+          "text": "47.7 mi",
+          "value": 76713
         },
         "duration": {
-          "text": "6 hours 17 mins",
-          "value": 22645
+          "text": "50 mins",
+          "value": 3022
         }
       }
     ]
