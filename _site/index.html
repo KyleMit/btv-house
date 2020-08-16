@@ -4,58 +4,243 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vermont House Hunting</title>
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
 
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
     <style>
 
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato"
+}
+
+main {
+    margin: 0 auto;
+    max-width: 50em;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background: #4d1ea5;
+    color: white;
+}
+
+header svg {
+    height: 25px;
+    margin-right: 10px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.houses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    padding: 10px 15px;
+    margin: 10px;
+    border: 1px solid #775ea5;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px #8080806b;
+    max-width: 350px;
+}
+
+.address a {
+    text-decoration: none;
+    color: #5a575e;
+}
+.address a:hover,
+.address a:focus {
+    text-decoration: underline;
+    color: #79609b;
+}
+.address svg {
+    height: 12px;
+    margin-right: 5px;
+}
+
+
+.card-body img {
+    max-width: 67%;
+    max-height: 150px;
+}
+
+
+.card-title h2 {
+    margin: 5px 0;
+}
+.card-title h2 a {
+    text-decoration: none;
+    color: #4d1ea5;
+    margin-right: 8px;
+}
+.card-title h2 a:hover,
+.card-title h2 a:focus {
+    text-decoration: underline;
+    color: #683db9;
+}
+
+
+.card-body {
+    display: flex;
+    margin-top: 9px;
+    align-items: start;
+    justify-content: space-between;
+}
+
+
+
+.card-data {
+    align-self: start;
+}
+
+
+.data-items li {
+    display: flex;
+    align-items: center;
+}
+.data-items svg {
+    height: 25px;
+    width: 25px;
+    color: #60596c;
+}
+.data-items li span {
+    font-size: 1.6em;
+    margin-left: 12px;
+    font-weight: bold;
+}
+
+.allowed span {
+    color: #237823;
+}
+
+span.price {
+    color: #5e468b;
+}
+
+footer {
+    text-align: center;
+    background: #484545;
+    padding: 15px;
+    color: white;
+}
+
+footer svg {
+    height: 11px;
+}
+
+footer a {
+    color: wheat;
+}
     </style>
 </head>
 <body>
 
     <header>
-        <h1>House Hunting in Vermont (for Parker)</h1>
+        <h1>
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="home-heart" class="svg-inline--fa fa-home-heart fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M64 311.4V496c0 8.8 7.2 16 16 16h416c8.8 0 16-7.2 16-16V311.4c-6.7-5.5-44.7-38.3-224-196.4C107.9 273.9 70.4 306.1 64 311.4zm314.1-26.3c27.6 23 29.1 64.2 4.5 89.1l-84.7 85.6c-5.5 5.5-14.3 5.5-19.8 0l-84.7-85.6c-24.6-24.9-23.2-66.1 4.3-89.1 24-20 59.7-16.4 81.6 5.8l8.6 8.7 8.6-8.7c22-22.2 57.7-25.8 81.6-5.8zM64 311.4v-.3s-2.7 2.5 0 .3zm506.7-75.1L512 184.5V48c0-8.8-7.2-16-16-16h-64c-8.8 0-16 7.2-16 16v51.7L314.7 10.3c-15.3-13.7-38.2-13.7-53.5 0l-256 226c-6.6 5.9-7.1 16-1.2 22.6l21.4 23.8c5.9 6.6 16 7.1 22.6 1.2L277.4 81.7c6-5.3 15.1-5.3 21.2 0L527.9 284c6.6 5.9 16.7 5.4 22.6-1.2l21.4-23.8c5.9-6.7 5.4-16.8-1.2-22.7zM512 311.1v.3c2.9 2.3 0-.3 0-.3z"></path></svg>
+
+            PK VT House Hunting
+        </h1>
     </header>
     <main>
         <ul class="houses">
                 
                     <li class="house card">
                         <div class="card-title">
-                            <h2>Single Family Home</h2>
+                            <h2>
+                                <a href="https://vermont.craigslist.org/apa/d/burlington-single-family-home/7177316461.html">
+                                    Single Family Home
+                                </a>
+                                <span class="price">
+                                    $800
+                                </span>
+                            </h2>
+                            <div class="address">
+                                <a href="https://www.google.com/maps/place/25 West Rd Burlington, VT">
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-pin" class="svg-inline--fa fa-map-pin fa-w-9" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 512"><path fill="currentColor" d="M112 316.94v156.69l22.02 33.02c4.75 7.12 15.22 7.12 19.97 0L176 473.63V316.94c-10.39 1.92-21.06 3.06-32 3.06s-21.61-1.14-32-3.06zM144 0C64.47 0 0 64.47 0 144s64.47 144 144 144 144-64.47 144-144S223.53 0 144 0zm0 76c-37.5 0-68 30.5-68 68 0 6.62-5.38 12-12 12s-12-5.38-12-12c0-50.73 41.28-92 92-92 6.62 0 12 5.38 12 12s-5.38 12-12 12z"></path></svg>
+                                    25 West Rd Burlington, VT
+                                </a>
+                            </div>
                         </div>
                         <div class="card-body">
                             <div class="card-data">
-                                <div>
-                                    $800
-                                </div>
-                                <div>
-                                    2
-                                </div>
-                                <div>
-                                    1
-                                </div>
-
+                                <ul class="data-items">
+                                    <li class="bedrooms">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bed" class="svg-inline--fa fa-bed fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M176 256c44.11 0 80-35.89 80-80s-35.89-80-80-80-80 35.89-80 80 35.89 80 80 80zm352-128H304c-8.84 0-16 7.16-16 16v144H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v352c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16v-48h512v48c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V240c0-61.86-50.14-112-112-112z"></path></svg>
+                                        <span>2</span>
+                                    </li>
+                                    <li class="bathrooms">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bath" class="svg-inline--fa fa-bath fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32,384a95.4,95.4,0,0,0,32,71.09V496a16,16,0,0,0,16,16h32a16,16,0,0,0,16-16V480H384v16a16,16,0,0,0,16,16h32a16,16,0,0,0,16-16V455.09A95.4,95.4,0,0,0,480,384V336H32ZM496,256H80V69.25a21.26,21.26,0,0,1,36.28-15l19.27,19.26c-13.13,29.88-7.61,59.11,8.62,79.73l-.17.17A16,16,0,0,0,144,176l11.31,11.31a16,16,0,0,0,22.63,0L283.31,81.94a16,16,0,0,0,0-22.63L272,48a16,16,0,0,0-22.62,0l-.17.17c-20.62-16.23-49.83-21.75-79.73-8.62L150.22,20.28A69.25,69.25,0,0,0,32,69.25V256H16A16,16,0,0,0,0,272v16a16,16,0,0,0,16,16H496a16,16,0,0,0,16-16V272A16,16,0,0,0,496,256Z"></path></svg>
+                                        <span>1</span>
+                                    </li>
+                                    <li class="cats pets  allowed ">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dog" class="svg-inline--fa fa-dog fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M298.06,224,448,277.55V496a16,16,0,0,1-16,16H368a16,16,0,0,1-16-16V384H192V496a16,16,0,0,1-16,16H112a16,16,0,0,1-16-16V282.09C58.84,268.84,32,233.66,32,192a32,32,0,0,1,64,0,32.06,32.06,0,0,0,32,32ZM544,112v32a64,64,0,0,1-64,64H448v35.58L320,197.87V48c0-14.25,17.22-21.39,27.31-11.31L374.59,64h53.63c10.91,0,23.75,7.92,28.62,17.69L464,96h64A16,16,0,0,1,544,112Zm-112,0a16,16,0,1,0-16,16A16,16,0,0,0,432,112Z"></path></svg>
+                                        <span> ✔ </span>
+                                    </li>
+                                    <li class="dogs pets  allowed ">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cat" class="svg-inline--fa fa-cat fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M290.59 192c-20.18 0-106.82 1.98-162.59 85.95V192c0-52.94-43.06-96-96-96-17.67 0-32 14.33-32 32s14.33 32 32 32c17.64 0 32 14.36 32 32v256c0 35.3 28.7 64 64 64h176c8.84 0 16-7.16 16-16v-16c0-17.67-14.33-32-32-32h-32l128-96v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V289.86c-10.29 2.67-20.89 4.54-32 4.54-61.81 0-113.52-44.05-125.41-102.4zM448 96h-64l-64-64v134.4c0 53.02 42.98 96 96 96s96-42.98 96-96V32l-64 64zm-72 80c-8.84 0-16-7.16-16-16s7.16-16 16-16 16 7.16 16 16-7.16 16-16 16zm80 0c-8.84 0-16-7.16-16-16s7.16-16 16-16 16 7.16 16 16-7.16 16-16 16z"></path></svg>
+                                        <span> ✔ </span>
+                                    </li>
+                                </ul>
                             </div>
-                            <img src="/assets/images/west-rd.jpg" alt="Single Family Home">
+                            <img src="/assets/images/25-west.jpg" alt="Single Family Home">
                         </div>
                     </li>
                 
                     <li class="house card">
                         <div class="card-title">
-                            <h2>43 Maple St, Essex</h2>
+                            <h2>
+                                <a href="https://vermont.craigslist.org/apa/d/essex-junction-43-maple-st-essex/7177287660.html">
+                                    43 Maple St, Essex
+                                </a>
+                                <span class="price">
+                                    $850
+                                </span>
+                            </h2>
+                            <div class="address">
+                                <a href="https://www.google.com/maps/place/43 Maple St, Essex, VT">
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-pin" class="svg-inline--fa fa-map-pin fa-w-9" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 512"><path fill="currentColor" d="M112 316.94v156.69l22.02 33.02c4.75 7.12 15.22 7.12 19.97 0L176 473.63V316.94c-10.39 1.92-21.06 3.06-32 3.06s-21.61-1.14-32-3.06zM144 0C64.47 0 0 64.47 0 144s64.47 144 144 144 144-64.47 144-144S223.53 0 144 0zm0 76c-37.5 0-68 30.5-68 68 0 6.62-5.38 12-12 12s-12-5.38-12-12c0-50.73 41.28-92 92-92 6.62 0 12 5.38 12 12s-5.38 12-12 12z"></path></svg>
+                                    43 Maple St, Essex, VT
+                                </a>
+                            </div>
                         </div>
                         <div class="card-body">
                             <div class="card-data">
-                                <div>
-                                    $850
-                                </div>
-                                <div>
-                                    2
-                                </div>
-                                <div>
-                                    1
-                                </div>
-
+                                <ul class="data-items">
+                                    <li class="bedrooms">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bed" class="svg-inline--fa fa-bed fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M176 256c44.11 0 80-35.89 80-80s-35.89-80-80-80-80 35.89-80 80 35.89 80 80 80zm352-128H304c-8.84 0-16 7.16-16 16v144H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v352c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16v-48h512v48c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V240c0-61.86-50.14-112-112-112z"></path></svg>
+                                        <span>2</span>
+                                    </li>
+                                    <li class="bathrooms">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bath" class="svg-inline--fa fa-bath fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32,384a95.4,95.4,0,0,0,32,71.09V496a16,16,0,0,0,16,16h32a16,16,0,0,0,16-16V480H384v16a16,16,0,0,0,16,16h32a16,16,0,0,0,16-16V455.09A95.4,95.4,0,0,0,480,384V336H32ZM496,256H80V69.25a21.26,21.26,0,0,1,36.28-15l19.27,19.26c-13.13,29.88-7.61,59.11,8.62,79.73l-.17.17A16,16,0,0,0,144,176l11.31,11.31a16,16,0,0,0,22.63,0L283.31,81.94a16,16,0,0,0,0-22.63L272,48a16,16,0,0,0-22.62,0l-.17.17c-20.62-16.23-49.83-21.75-79.73-8.62L150.22,20.28A69.25,69.25,0,0,0,32,69.25V256H16A16,16,0,0,0,0,272v16a16,16,0,0,0,16,16H496a16,16,0,0,0,16-16V272A16,16,0,0,0,496,256Z"></path></svg>
+                                        <span>1</span>
+                                    </li>
+                                    <li class="cats pets  allowed ">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dog" class="svg-inline--fa fa-dog fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M298.06,224,448,277.55V496a16,16,0,0,1-16,16H368a16,16,0,0,1-16-16V384H192V496a16,16,0,0,1-16,16H112a16,16,0,0,1-16-16V282.09C58.84,268.84,32,233.66,32,192a32,32,0,0,1,64,0,32.06,32.06,0,0,0,32,32ZM544,112v32a64,64,0,0,1-64,64H448v35.58L320,197.87V48c0-14.25,17.22-21.39,27.31-11.31L374.59,64h53.63c10.91,0,23.75,7.92,28.62,17.69L464,96h64A16,16,0,0,1,544,112Zm-112,0a16,16,0,1,0-16,16A16,16,0,0,0,432,112Z"></path></svg>
+                                        <span> ✔ </span>
+                                    </li>
+                                    <li class="dogs pets  allowed ">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cat" class="svg-inline--fa fa-cat fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M290.59 192c-20.18 0-106.82 1.98-162.59 85.95V192c0-52.94-43.06-96-96-96-17.67 0-32 14.33-32 32s14.33 32 32 32c17.64 0 32 14.36 32 32v256c0 35.3 28.7 64 64 64h176c8.84 0 16-7.16 16-16v-16c0-17.67-14.33-32-32-32h-32l128-96v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V289.86c-10.29 2.67-20.89 4.54-32 4.54-61.81 0-113.52-44.05-125.41-102.4zM448 96h-64l-64-64v134.4c0 53.02 42.98 96 96 96s96-42.98 96-96V32l-64 64zm-72 80c-8.84 0-16-7.16-16-16s7.16-16 16-16 16 7.16 16 16-7.16 16-16 16zm80 0c-8.84 0-16-7.16-16-16s7.16-16 16-16 16 7.16 16 16-7.16 16-16 16z"></path></svg>
+                                        <span> ✔ </span>
+                                    </li>
+                                </ul>
                             </div>
                             <img src="/assets/images/43-maple.jpg" alt="43 Maple St, Essex">
                         </div>
@@ -65,7 +250,7 @@
 
     </main>
     <footer>
-
+        Brought to you with <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg> by <a href="https://btv.dev/">BTV dot DEV</a>
     </footer>
 </body>
 </html>
