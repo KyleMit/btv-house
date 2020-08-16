@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mitofsky House Hunting</title>
+    <meta name="title" content="Mitofsky House Hunting">
+    <meta name="description" content="Some real estate listings aggregated by Craiglist and Beth">
+
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+    <meta name="theme-color" content="#4d1ea5">
+
+    {# Open Graph / Facebook #}
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://btv.house/">
+    <meta property="og:title" content="Mitofsky House Hunting">
+    <meta property="og:description" content="Some real estate listings aggregated by Craiglist and Beth">
+    <meta property="og:image" content="https://btv.house/assets/thumbnail.png">
+
+    {# Twitter #}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mitofsky House Hunting">
+    <meta name="twitter:description" content="Some real estate listings aggregated by Craiglist and Beth">
+    <meta name="twitter:image" content="https://btv.house/assets/thumbnail.png">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <style>
+        {% include "assets/styles/site.css" %}
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>
+            {% include "assets/icons/home-heart.svg" %}
+            Mitofsky House Hunting
+        </h1>
+    </header>
+    <main>
+
+       {{content | safe}}
+
+    </main>
+    <footer>
+        <span>Brought to you with</span>
+        {% include "assets/icons/heart.svg" %}
+        <span>by</span>
+        <a href="https://btv.dev/">BTV dot DEV</a>
+    </footer>
+</body>
+</html>

@@ -1,236 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Mitofsky House Hunting</title>
-    <meta name="title" content="Mitofsky House Hunting">
-    <meta name="description" content="Some real estate listings aggregated by Craiglist and Beth">
-
-    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
-    <meta name="theme-color" content="#4d1ea5">
-
-    {# Open Graph / Facebook #}
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://btv.house/">
-    <meta property="og:title" content="Mitofsky House Hunting">
-    <meta property="og:description" content="Some real estate listings aggregated by Craiglist and Beth">
-    <meta property="og:image" content="https://btv.house/assets/thumbnail.png">
-
-    {# Twitter #}
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Mitofsky House Hunting">
-    <meta name="twitter:description" content="Some real estate listings aggregated by Craiglist and Beth">
-    <meta name="twitter:image" content="https://btv.house/assets/thumbnail.png">
-
-
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-
-    <style>
-
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family: "Lato";
-    background: #fbf8ff;
-}
-
-main {
-    margin: 0 auto;
-    max-width: 820px;
-}
-
-header {
-    text-align: center;
-    padding: 10px;
-    background: #4d1ea5;
-    color: white;
-}
-
-header svg {
-    height: 25px;
-    margin-right: 10px;
-}
-
-header h1 {
-    margin: 0;
-}
-
-
-ul {
-    padding-left: 0;
-}
-
-li {
-    list-style: none;
-}
-
-.houses {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.card {
-    padding: 10px 15px;
-    margin: 10px;
-    border: 1px solid #775ea5;
-    border-radius: 3px;
-    box-shadow: 1px 1px 1px #8080806b;
-    max-width: 350px;
-    width: 350px;
-    background: white;
-}
-
-.address a {
-    text-decoration: none;
-    color: #5a575e;
-}
-.address a:hover,
-.address a:focus {
-    text-decoration: underline;
-    color: #79609b;
-}
-.address svg {
-    height: 12px;
-    margin-right: 5px;
-}
-
-
-.card-body img {
-    max-width: 67%;
-    max-height: 150px;
-    border-radius: 2px;
-}
-
-
-.card-title h2 {
-    margin: 5px 0;
-}
-.card-title h2 a {
-    text-decoration: none;
-    color: #4d1ea5;
-    margin-right: 8px;
-}
-.card-title h2 a:hover,
-.card-title h2 a:focus {
-    text-decoration: underline;
-    color: #683db9;
-}
-
-
-.card-body {
-    display: flex;
-    margin-top: 9px;
-    align-items: start;
-    justify-content: space-between;
-}
-
-
-
-.card-data {
-    align-self: start;
-}
-
-
-.data-items li {
-    display: flex;
-    align-items: center;
-}
-.data-items svg {
-    height: 25px;
-    width: 25px;
-    color: #60596c;
-}
-.data-items li span {
-    font-size: 1.6em;
-    margin-left: 12px;
-    font-weight: bold;
-}
-
-.allowed span {
-    color: #237823;
-}
-
-span.price {
-    color: #675982;
-}
-
-footer {
-    text-align: center;
-    background: #484545;
-    padding: 15px;
-    color: white;
-}
-
-footer svg {
-    height: 11px;
-}
-
-footer a {
-    color: wheat;
-}
-    </style>
-</head>
-<body>
-
-    <header>
-        <h1>
-            {% include "assets/icons/home-heart.svg" %}
-            Mitofsky House Hunting
-        </h1>
-    </header>
-    <main>
-        <ul class="houses">
-                {% for house in houses %}
-                    <li class="house card">
-                        <div class="card-title">
-                            <h2>
-                                <a href="{{house.link}}">
-                                    {{house.title}}
-                                </a>
-                                <span class="price">
-                                    {{house.price}}
-                                </span>
-                            </h2>
-                            <div class="address">
-                                <a href="https://www.google.com/maps/place/{{house.address}}">
-                                    {% include "assets/icons/map-pin.svg" %}
-                                    {{house.address}}
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-data">
-                                <ul class="data-items">
-                                    <li class="bedrooms">
-                                        {% include "assets/icons/bed.svg" %}
-                                        <span>{{house.bedrooms}}</span>
-                                    </li>
-                                    <li class="bathrooms">
-                                        {% include "assets/icons/bath.svg" %}
-                                        <span>{{house.bathrooms}}</span>
-                                    </li>
-                                    <li class="cats pets {% if house.dogs %} allowed {% endif %}">
-                                        {% include "assets/icons/dog.svg" %}
-                                        <span>{% if house.dogs %} ✔ {% else %} ✗ {% endif %}</span>
-                                    </li>
-                                    <li class="dogs pets {% if  house.cats %} allowed {% endif %}">
-                                        {% include "assets/icons/cat.svg" %}
-                                        <span>{% if house.cats %} ✔ {% else %} ✗ {% endif %}</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <img src="/assets/images/{{house.thumbnail}}" alt="{{house.title}}">
-                        </div>
-                    </li>
-                {% endfor %}
-            </ul>
-
-    </main>
-    <footer>
-        Brought to you with {% include "assets/icons/heart.svg" %} by <a href="https://btv.dev/">BTV dot DEV</a>
-    </footer>
-</body>
-</html>
+---
+layout: default.njk
+---
+<ul class="houses">
+    {% for house in houses %}
+        <li class="house card">
+            <div class="card-title">
+                <h2>
+                    <a href="{{house.link}}">
+                        {{house.title}}
+                    </a>
+                    <span class="price">
+                        {{house.price}}
+                    </span>
+                </h2>
+                <div class="address">
+                    <a href="https://www.google.com/maps/place/{{house.address}}">
+                        {% include "assets/icons/map-pin.svg" %}
+                        {{house.address}}
+                    </a>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="card-data">
+                    <ul class="data-items">
+                        <li class="bedrooms">
+                            {% include "assets/icons/bed.svg" %}
+                            <span>{{house.bedrooms}}</span>
+                        </li>
+                        <li class="bathrooms">
+                            {% include "assets/icons/bath.svg" %}
+                            <span>{{house.bathrooms}}</span>
+                        </li>
+                        <li class="cats pets {% if house.dogs %} allowed {% endif %}">
+                            {% include "assets/icons/dog.svg" %}
+                            <span>{% if house.dogs %} ✔ {% else %} ✗ {% endif %}</span>
+                        </li>
+                        <li class="dogs pets {% if  house.cats %} allowed {% endif %}">
+                            {% include "assets/icons/cat.svg" %}
+                            <span>{% if house.cats %} ✔ {% else %} ✗ {% endif %}</span>
+                        </li>
+                    </ul>
+                </div>
+                <img src="/assets/images/{{house.thumbnail}}" alt="{{house.title}}">
+            </div>
+        </li>
+    {% endfor %}
+</ul>

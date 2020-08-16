@@ -1,0 +1,155 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato";
+    background: #fbf8ff;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 820px;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background: #4d1ea5;
+    color: white;
+}
+
+header svg {
+    height: 25px;
+    margin-right: 10px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.houses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    padding: 10px 15px;
+    margin: 10px;
+    border: 1px solid #775ea5;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px #8080806b;
+    max-width: 350px;
+    width: 350px;
+    background: white;
+}
+
+.address a {
+    text-decoration: none;
+    color: #5a575e;
+}
+
+.address a:hover,
+.address a:focus {
+    text-decoration: underline;
+    color: #79609b;
+}
+
+.address svg {
+    height: 12px;
+    margin-right: 5px;
+}
+
+.card-body img {
+    max-width: 67%;
+    max-height: 150px;
+    border-radius: 2px;
+}
+
+.card-title h2 {
+    margin: 5px 0;
+}
+
+.card-title h2 a {
+    text-decoration: none;
+    color: #4d1ea5;
+    margin-right: 8px;
+}
+
+.card-title h2 a:hover,
+.card-title h2 a:focus {
+    text-decoration: underline;
+    color: #683db9;
+}
+
+.card-body {
+    display: flex;
+    margin-top: 9px;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.card-data {
+    align-self: start;
+}
+
+.data-items li {
+    display: flex;
+    align-items: center;
+}
+
+.data-items svg {
+    height: 25px;
+    width: 25px;
+    color: #60596c;
+}
+
+.data-items li span {
+    font-size: 1.6em;
+    margin-left: 12px;
+    font-weight: bold;
+}
+
+.allowed span {
+    color: #237823;
+}
+
+span.price {
+    color: #675982;
+}
+
+
+/* footer */
+
+footer {
+    text-align: center;
+    background: #484545;
+    padding: 15px;
+    color: white;
+}
+
+footer svg {
+    height: 11px;
+}
+
+footer a {
+    color: wheat;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer>* {
+    margin: 0 3px;
+}
